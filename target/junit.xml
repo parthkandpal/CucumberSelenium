@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="1" tests="2" time="74.818683">
+<testcase classname="Login to the application" name="Validate the login functionality" time="74.818683">
+<system-out><![CDATA[Given User is navigated to login page.......................................passed
+When Title of the login page is FreeCRM.....................................passed
+Then user enters username...................................................passed
+Then user enters Password...................................................passed
+Then user clicks on login button............................................passed
+Then user is on home page...................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login to the application" name="User is able to create Contact" time="0">
+<skipped><![CDATA[Given User is navigated to Home page........................................undefined
+When User mouse hover on contacts list......................................undefined
+Then User click on New Contact List.........................................undefined
+Then User enters first Name and last Name...................................undefined
+Then User click n save button...............................................undefined
+Then verify new contact has been created....................................undefined
+]]></skipped>
+</testcase>
+</testsuite>

@@ -1,0 +1,158 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "Validate the login functionality",
+        "description": "",
+        "id": "login-to-the-application;validate-the-login-functionality",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 35624293945,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is navigated to login page",
+            "match": {
+              "location": "LoginstepDefinition.User_is_navigated_to_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 118379225,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Title of the login page is FreeCRM",
+            "match": {
+              "location": "LoginstepDefinition.Title_of_the_login_page_is_FreeCRM()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1913039836,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enters username",
+            "match": {
+              "location": "LoginstepDefinition.user_enters_username()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 174822497,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user enters Password",
+            "match": {
+              "location": "LoginstepDefinition.user_enters_Password()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 31473271181,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "LoginstepDefinition.user_clicks_on_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5514876761,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user is on home page",
+            "match": {
+              "location": "LoginstepDefinition.user_is_on_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 12,
+        "name": "User is able to create Contact",
+        "description": "",
+        "id": "login-to-the-application;user-is-able-to-create-contact",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 13,
+            "name": "User is navigated to Home page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 14,
+            "name": "User mouse hover on contacts list",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 15,
+            "name": "User click on New Contact List",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 16,
+            "name": "User enters first Name and last Name",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 17,
+            "name": "User click n save button",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 18,
+            "name": "verify new contact has been created",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login to the application",
+    "description": "",
+    "id": "login-to-the-application",
+    "keyword": "Feature",
+    "uri": "C:/Users/PARTH KANDPAL/eclipse-workspace/BDDFramework/src/main/java/Features/login.feature"
+  }
+]
