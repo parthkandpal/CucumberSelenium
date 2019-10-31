@@ -3,156 +3,360 @@
     "line": 1,
     "elements": [
       {
-        "line": 2,
-        "name": "Validate the login functionality",
+        "line": 17,
+        "name": "ADDING new Contacts",
         "description": "",
-        "id": "login-to-the-application;validate-the-login-functionality",
+        "id": "add-new-contact;adding-new-contacts;;2",
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 35624293945,
+              "duration": 12171642037,
               "status": "passed"
             },
             "line": 5,
             "name": "User is navigated to login page",
             "match": {
-              "location": "LoginstepDefinition.User_is_navigated_to_login_page()"
+              "location": "AddContactStepDefinition.User_is_navigated_to_login_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 118379225,
+              "duration": 23189034,
               "status": "passed"
             },
             "line": 6,
             "name": "Title of the login page is FreeCRM",
             "match": {
-              "location": "LoginstepDefinition.Title_of_the_login_page_is_FreeCRM()"
+              "location": "AddContactStepDefinition.Title_of_the_login_page_is_FreeCRM()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 1913039836,
+              "duration": 445044918,
               "status": "passed"
             },
             "line": 7,
-            "name": "user enters username",
+            "name": "user enters \"ronnieo\" and \"Test123\"",
             "match": {
-              "location": "LoginstepDefinition.user_enters_username()"
+              "arguments": [
+                {
+                  "val": "ronnieo",
+                  "offset": 13
+                },
+                {
+                  "val": "Test123",
+                  "offset": 27
+                }
+              ],
+              "location": "AddContactStepDefinition.user_enters_username(String,String)"
             },
+            "matchedColumns": [
+              0,
+              1
+            ],
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 174822497,
+              "duration": 7567809034,
               "status": "passed"
             },
             "line": 8,
-            "name": "user enters Password",
+            "name": "user clicks on login button",
             "match": {
-              "location": "LoginstepDefinition.user_enters_Password()"
+              "location": "AddContactStepDefinition.user_clicks_on_login_button()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 31473271181,
+              "duration": 13613726,
               "status": "passed"
             },
             "line": 9,
-            "name": "user clicks on login button",
+            "name": "user is on home page",
             "match": {
-              "location": "LoginstepDefinition.user_clicks_on_login_button()"
+              "location": "AddContactStepDefinition.user_is_on_home_page()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 5514876761,
+              "duration": 426003282,
               "status": "passed"
             },
             "line": 10,
-            "name": "user is on home page",
+            "name": "user moves to new contact page",
             "match": {
-              "location": "LoginstepDefinition.user_is_on_home_page()"
+              "location": "AddContactStepDefinition.user_moves_to_new_contact_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2290037711,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user input \"John\" and \"Smith\" and \"Contractor\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "John",
+                  "offset": 12
+                },
+                {
+                  "val": "Smith",
+                  "offset": 23
+                },
+                {
+                  "val": "Contractor",
+                  "offset": 35
+                }
+              ],
+              "location": "AddContactStepDefinition.user_input_firstname_and_lastname_and_position(String,String,String)"
+            },
+            "matchedColumns": [
+              2,
+              3,
+              4
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 133366507,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user click on Save Button",
+            "match": {
+              "location": "AddContactStepDefinition.user_click_on_Save_Button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1918929881,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "verify contact has been created with \"John\" and \"Smith\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "John",
+                  "offset": 38
+                },
+                {
+                  "val": "Smith",
+                  "offset": 49
+                }
+              ],
+              "location": "AddContactStepDefinition.verify_contact_has_been_created_with_firstname_and_lastname(String,String)"
+            },
+            "matchedColumns": [
+              2,
+              3
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 842099175,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "close the browser",
+            "match": {
+              "location": "AddContactStepDefinition.close_the_driver()"
             },
             "keyword": "Then "
           }
         ]
       },
       {
-        "line": 12,
-        "name": "User is able to create Contact",
+        "line": 18,
+        "name": "ADDING new Contacts",
         "description": "",
-        "id": "login-to-the-application;user-is-able-to-create-contact",
+        "id": "add-new-contact;adding-new-contacts;;3",
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 9937800850,
+              "status": "passed"
             },
-            "line": 13,
-            "name": "User is navigated to Home page",
-            "match": {},
+            "line": 5,
+            "name": "User is navigated to login page",
+            "match": {
+              "location": "AddContactStepDefinition.User_is_navigated_to_login_page()"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 11833553,
+              "status": "passed"
             },
-            "line": 14,
-            "name": "User mouse hover on contacts list",
-            "match": {},
+            "line": 6,
+            "name": "Title of the login page is FreeCRM",
+            "match": {
+              "location": "AddContactStepDefinition.Title_of_the_login_page_is_FreeCRM()"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 459579318,
+              "status": "passed"
             },
-            "line": 15,
-            "name": "User click on New Contact List",
-            "match": {},
+            "line": 7,
+            "name": "user enters \"parth\" and \"Test123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "parth",
+                  "offset": 13
+                },
+                {
+                  "val": "Test123",
+                  "offset": 25
+                }
+              ],
+              "location": "AddContactStepDefinition.user_enters_username(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
             "keyword": "Then "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 19455127084,
+              "status": "passed"
             },
-            "line": 16,
-            "name": "User enters first Name and last Name",
-            "match": {},
+            "line": 8,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "AddContactStepDefinition.user_clicks_on_login_button()"
+            },
             "keyword": "Then "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 11673682,
+              "error_message": "junit.framework.ComparisonFailure: expected:\u003cCRMPRO[ - CRM software for customer relationship management, sales, and support.]\u003e but was:\u003cCRMPRO[]\u003e\r\n\tat junit.framework.Assert.assertEquals(Assert.java:100)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:107)\r\n\tat stepDefinition.AddContactStepDefinition.user_is_on_home_page(AddContactStepDefinition.java:56)\r\n\tat ✽.Then user is on home page(C:/Users/PARTH KANDPAL/eclipse-workspace/BDDFramework/src/main/java/Features/Contacts.feature:9)\r\n",
+              "status": "failed"
             },
-            "line": 17,
-            "name": "User click n save button",
-            "match": {},
+            "line": 9,
+            "name": "user is on home page",
+            "match": {
+              "location": "AddContactStepDefinition.user_is_on_home_page()"
+            },
             "keyword": "Then "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
-            "line": 18,
-            "name": "verify new contact has been created",
-            "match": {},
+            "line": 10,
+            "name": "user moves to new contact page",
+            "match": {
+              "location": "AddContactStepDefinition.user_moves_to_new_contact_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "user input \"Keneddy\" and \"robert\" and \"Employee\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Keneddy",
+                  "offset": 12
+                },
+                {
+                  "val": "robert",
+                  "offset": 26
+                },
+                {
+                  "val": "Employee",
+                  "offset": 39
+                }
+              ],
+              "location": "AddContactStepDefinition.user_input_firstname_and_lastname_and_position(String,String,String)"
+            },
+            "matchedColumns": [
+              2,
+              3,
+              4
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "user click on Save Button",
+            "match": {
+              "location": "AddContactStepDefinition.user_click_on_Save_Button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "verify contact has been created with \"Keneddy\" and \"robert\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Keneddy",
+                  "offset": 38
+                },
+                {
+                  "val": "robert",
+                  "offset": 52
+                }
+              ],
+              "location": "AddContactStepDefinition.verify_contact_has_been_created_with_firstname_and_lastname(String,String)"
+            },
+            "matchedColumns": [
+              2,
+              3
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "close the browser",
+            "match": {
+              "location": "AddContactStepDefinition.close_the_driver()"
+            },
             "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "Login to the application",
+    "name": "Add new Contact",
     "description": "",
-    "id": "login-to-the-application",
+    "id": "add-new-contact",
     "keyword": "Feature",
-    "uri": "C:/Users/PARTH KANDPAL/eclipse-workspace/BDDFramework/src/main/java/Features/login.feature"
+    "uri": "C:/Users/PARTH KANDPAL/eclipse-workspace/BDDFramework/src/main/java/Features/Contacts.feature"
   }
 ]

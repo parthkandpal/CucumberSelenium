@@ -5,6 +5,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -29,17 +30,13 @@ public class LoginstepDefinition{
 		Assert.assertEquals(title, "CRMPRO - CRM software for customer relationship management, sales, and support.");
 	}
 	
-	@Then("^user enters username$")
-	public void user_enters_username() throws Throwable {
-	   driver.findElement(By.name("username")).sendKeys("ronnieo");
+	@Then("^user enters \"(.*)\" and \"(.*)\"$")
+	public void user_enters_username(String username, String password) throws Throwable {
+	   driver.findElement(By.name("username")).sendKeys(username);
+	   driver.findElement(By.name("password")).sendKeys(password);
 
 	}
 
-	@Then("^user enters Password$")
-	public void user_enters_Password() throws Throwable {
-		driver.findElement(By.name("password")).sendKeys("test123");
-
-	}
 
 	@Then("^user clicks on login button$")
 	public void user_clicks_on_login_button() throws Throwable {
@@ -55,6 +52,8 @@ public class LoginstepDefinition{
 	    
 
 	}
+	
+	
 	@Then("^close the browser$")
 	public void close_the_driver() {
 		driver.quit();

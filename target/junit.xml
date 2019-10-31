@@ -1,20 +1,35 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="1" tests="2" time="74.818683">
-<testcase classname="Login to the application" name="Validate the login functionality" time="74.818683">
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="55.707749">
+<testcase classname="Add new Contact" name="ADDING new Contacts" time="25.831735">
 <system-out><![CDATA[Given User is navigated to login page.......................................passed
 When Title of the login page is FreeCRM.....................................passed
-Then user enters username...................................................passed
-Then user enters Password...................................................passed
+Then user enters "ronnieo" and "Test123"....................................passed
 Then user clicks on login button............................................passed
 Then user is on home page...................................................passed
+Then user moves to new contact page.........................................passed
+Then user input "John" and "Smith" and "Contractor".........................passed
+Then user click on Save Button..............................................passed
+Then verify contact has been created with "John" and "Smith"................passed
+Then close the browser......................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Login to the application" name="User is able to create Contact" time="0">
-<skipped><![CDATA[Given User is navigated to Home page........................................undefined
-When User mouse hover on contacts list......................................undefined
-Then User click on New Contact List.........................................undefined
-Then User enters first Name and last Name...................................undefined
-Then User click n save button...............................................undefined
-Then verify new contact has been created....................................undefined
-]]></skipped>
+<testcase classname="Add new Contact" name="ADDING new Contacts 2" time="29.876014">
+<failure message="junit.framework.ComparisonFailure: expected:&lt;CRMPRO[ - CRM software for customer relationship management, sales, and support.]&gt; but was:&lt;CRMPRO[]&gt;&#13;&#10;&#9;at junit.framework.Assert.assertEquals(Assert.java:100)&#13;&#10;&#9;at junit.framework.Assert.assertEquals(Assert.java:107)&#13;&#10;&#9;at stepDefinition.AddContactStepDefinition.user_is_on_home_page(AddContactStepDefinition.java:56)&#13;&#10;&#9;at ✽.Then user is on home page(C:/Users/PARTH KANDPAL/eclipse-workspace/BDDFramework/src/main/java/Features/Contacts.feature:9)&#13;&#10;"><![CDATA[Given User is navigated to login page.......................................passed
+When Title of the login page is FreeCRM.....................................passed
+Then user enters "parth" and "Test123"......................................passed
+Then user clicks on login button............................................passed
+Then user is on home page...................................................failed
+Then user moves to new contact page.........................................skipped
+Then user input "Keneddy" and "robert" and "Employee".......................skipped
+Then user click on Save Button..............................................skipped
+Then verify contact has been created with "Keneddy" and "robert"............skipped
+Then close the browser......................................................skipped
+
+StackTrace:
+junit.framework.ComparisonFailure: expected:<CRMPRO[ - CRM software for customer relationship management, sales, and support.]> but was:<CRMPRO[]>
+	at junit.framework.Assert.assertEquals(Assert.java:100)
+	at junit.framework.Assert.assertEquals(Assert.java:107)
+	at stepDefinition.AddContactStepDefinition.user_is_on_home_page(AddContactStepDefinition.java:56)
+	at ✽.Then user is on home page(C:/Users/PARTH KANDPAL/eclipse-workspace/BDDFramework/src/main/java/Features/Contacts.feature:9)
+]]></failure>
 </testcase>
 </testsuite>
