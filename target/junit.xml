@@ -1,13 +1,36 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="30.232706">
-<testcase classname="Create a deal" name="Create a deal on FreeCRM" time="30.232706">
-<system-out><![CDATA[Given User is navigated to login page.......................................passed
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="27.043136">
+<testcase classname="Create a deal" name="Create a deal on FreeCRM" time="27.043136">
+<failure message="org.openqa.selenium.WebDriverException: unknown error: unhandled inspector error: {&quot;code&quot;:-32000,&quot;message&quot;:&quot;Cannot find context with specified id&quot;}&#10;  (Session info: chrome=78.0.3904.70)&#10;Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'&#10;System info: host: 'PYPARTH', ip: '192.168.78.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}), userDataDir=C:\Users\PARTHK~1\AppData\Local\Temp\scoped_dir15524_1770258402}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:58433}, acceptInsecureCerts=false, browserVersion=78.0.3904.70, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true}]&#10;Session ID: 0d9000a093c2072f1f4ad0b52974c7f1&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:275)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)&#13;&#10;&#9;at stepDefinition.DealsStepDefinitionwithMaps.user_inputs_deal_details(DealsStepDefinitionwithMaps.java:106)&#13;&#10;&#9;at ✽.Then user inputs deal details(C:/Users/PARTH KANDPAL/eclipse-workspace/BDDFramework/src/main/java/Features/deals.feature:12)&#13;&#10;"><![CDATA[Given User is navigated to login page.......................................passed
 When Title of the login page is FreeCRM.....................................passed
 Then user enters username and password......................................passed
 Then user clicks on login button............................................passed
 Then user is on home page...................................................passed
 Then user moves to deal page................................................passed
-Then user inputs deal details...............................................passed
-Then close the browser......................................................passed
-]]></system-out>
+Then user inputs deal details...............................................failed
+Then close the browser......................................................skipped
+
+StackTrace:
+org.openqa.selenium.WebDriverException: unknown error: unhandled inspector error: {"code":-32000,"message":"Cannot find context with specified id"}
+  (Session info: chrome=78.0.3904.70)
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'PYPARTH', ip: '192.168.78.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}), userDataDir=C:\Users\PARTHK~1\AppData\Local\Temp\scoped_dir15524_1770258402}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:58433}, acceptInsecureCerts=false, browserVersion=78.0.3904.70, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
+Session ID: 0d9000a093c2072f1f4ad0b52974c7f1
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:275)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
+	at stepDefinition.DealsStepDefinitionwithMaps.user_inputs_deal_details(DealsStepDefinitionwithMaps.java:106)
+	at ✽.Then user inputs deal details(C:/Users/PARTH KANDPAL/eclipse-workspace/BDDFramework/src/main/java/Features/deals.feature:12)
+]]></failure>
 </testcase>
 </testsuite>
